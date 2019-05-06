@@ -19,7 +19,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-  - task: MSBuild@1
-    inputs:
-      solution: '**/*.sln'
-      clean: true
+
+# MSBuild
+# Build with MSBuild
+- task: MSBuild@1
+  inputs:
+    #solution: '**/*.sln' 
